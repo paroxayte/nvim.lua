@@ -4,7 +4,7 @@ local api = vim.api
 local inspect = vim.inspect
 
 -- Indicate plugin has been loaded
-api.nvim_set_var("nvim_lua", true)
+require "fruitpunch".configs["nvim_lua"] = true
 
 local function extend(t, o)
   local mt = getmetatable(t)
